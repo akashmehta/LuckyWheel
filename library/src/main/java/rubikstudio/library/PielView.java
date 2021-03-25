@@ -325,8 +325,8 @@ public class PielView extends View {
         Path path = new Path();
         path.addRect(rect, Path.Direction.CW);
         path.close();
-        canvas.rotate(initFloat + (arraySize / 18f), x, y);
-        canvas.drawTextOnPath(mStr, path, mTopTextPadding / 7f, mTextPaint.getTextSize() / 2.75f, mTextPaint);
+        canvas.rotate(initFloat + (arraySize / 18f) + 90, x, y);
+        canvas.drawTextOnPath(mStr, path, mTopTextPadding / 7f, mTextPaint.getTextSize() * 2, mTextPaint);
         canvas.restore();
     }
 
